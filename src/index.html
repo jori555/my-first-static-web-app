@@ -1,17 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FSJEBX3FJJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FSJEBX3FJJ');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KM8Z52L');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ライダーに走っていただきたい絶景で最高なおすすめのバイク道を紹介しているサイトです。">
+    <meta name="keywords" content="バイク,ライダー,バイカー,おすすめの道,絶景の道,最高の道,ツーリング,おすすめロード,絶景ロード,ワインディング,景観,大自然">
+    <link href="css/template.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>ダンちゃんの旅日記</title>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+<!-- //全ページ共通エリア-->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM8Z52L"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- バーガーメニュー（PC時は表示OFF） -->
+    <input id="menu" type="checkbox" />
+    <label for="menu" class="open"><i class="fas fa-bars fa-2x"></i></label>
+    <label for="menu" class="back"></label>
+    <!-- バーガーメニュー（PC時は表示OFF） -->
+    <!-- サイドメニューバー全体 -->
+    <aside>
+        <!-- バーガーメニュー閉ボタン（PC時は表示OFF） -->
+        <label for="menu" class="close"><i class="fas fa-times fa-2x"></i></label>
+        <!-- //バーガーメニュー閉ボタン（PC時は表示OFF） -->
+        <a href="/"><header><i class="fas fa-home" fa-fw></i> ＨＯＭＥ</header></a>
+        <nav>
+            <ul>
+                <li>
+                    <!-- <div class="big_nav">▼ バイク</div> -->
+                    <!-- <div class="toggle"> -->
+                    <ul class="small_nav1">
+                        <a href="/motorcycle"><li>バイク  <i class="fas fa-external-link-alt"></i></li></a>
+                        <a href="/motorcycle/hokkaido"><li>北海道  <i class="fas fa-external-link-alt"></i></li></a>
+                        <a href="/motorcycle/tohoku"><li>東北  <i class="fas fa-external-link-alt"></i></li></a>
+                        <a href="/motorcycle/kanto_koshinetsu"><li>関東甲信越  <i class="fas fa-external-link-alt"></i></li></a>
+                        <a href="/motorcycle/chubu_hokuriku"><li>中部・北陸  <i class="fas fa-external-link-alt"></i></li></a>
+                        <a href="/motorcycle/kansai"><li>関西  <i class="fas fa-external-link-alt"></i></li></a>
+                        <a href="/motorcycle/chugoku_shikoku"><li>中国・四国  <i class="fas fa-external-link-alt"></i></li></a>
+                        <a href="/motorcycle/kyusyu_okinawa"><li>九州・沖縄  <i class="fas fa-external-link-alt"></i></li></a>
+                    </ul>
+                    <!-- </div> -->
+                </li>
+                    <!-- <li><div class="big_nav">▼ キャンプ（準備中）</div>
+                    <div class="toggle">
+                    <ul class="small_nav1">
+                        <li>キャンプ（準備中）  <i class="fas fa-external-link-alt"></i></li>
+                    </ul>
+                    </div>
+                </li> -->
+            </ul>
+        </nav>
+        <a href="/management"><footer><h4>当サイト管理人について</h4></footer></a>
+    </aside>
+    <!-- //サイドメニューバー全体 -->
+    <!-- ボトムナビゲーション（PC時は表示OFF） -->
+    <!-- <div class="bottom_nav">
+        <ul>
+            <a href="/motorcycle"><li><i class="fas fa-motorcycle" fa-fw></i> 他のおすすめ道を探す！ <i class="fas fa-external-link-alt"></i></li></a>
+        </ul>
+    </div> -->
+    <!-- //ボトムナビゲーション（PC時は表示OFF） -->
+<!-- //全ページ共通エリア-->
+<!-- 個別ページエリア -->
+    <main>
+        <h1><i class="fas fa-motorcycle" fa-fw></i> ダンちゃんの旅日記 <i class="fas fa-campground" fa-fw></i></h1>
+        <img src="images/top.jpg" alt="">
+        <div style="display: none;">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="/">
+                  <span itemprop="name">ホーム</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </li>
+          </ol>
+        </div>
+        <div class="lead">
+            <h2><span>バイクと旅に出る</span></h2>
+            <p>はじめまして！当サイト管理人のダンちゃんです。</p>
+            <p>当サイトでは、バイク歴６年の私が日本全国４７都道府県を旅して発見したおすすめの道をご紹介いたします。</p>
+        </div>
+        <div class="contents">
+            <h3>ピックアップ</h3>
+            <div class="contents-box">
+                <figure>
+                    <a href="/motorcycle/hokkaido">
+                    <figcaption><i class="fas fa-motorcycle" fa-fw></i>北海道</figcaption>
+                    <img src="images/hokkaido/siretoko.jpg" alt="北海道のおすすめの道">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="/motorcycle/tohoku">
+                    <figcaption><i class="fas fa-motorcycle" fa-fw></i>東北</figcaption>
+                    <img src="images/tohoku/bandiazuma.jpg" alt="東北のおすすめの道">
+                    </a>
+                </figure>
+                </div>
+                <div class="contents-box">
+                <figure>
+                    <a href="/motorcycle/kanto_koshinetsu">
+                    <figcaption><i class="fas fa-motorcycle" fa-fw></i>関東・甲信越</figcaption>
+                    <img src="images/kanto_koshinetsu/venusline.jpg" alt="関東・甲信越のおすすめの道">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="/motorcycle/chubu_hokuriku">
+                    <figcaption><i class="fas fa-motorcycle" fa-fw></i>中部・北陸</figcaption>
+                    <img src="images/chubu_hokuriku/chirihamanagisadriveway.jpg" alt="中部・北陸のおすすめの道">
+                    </a>
+                </figure>
+                </div>
+                <div class="contents-box">
+                <figure>
+                    <a href="/motorcycle/kansai">
+                    <figcaption><i class="fas fa-motorcycle" fa-fw></i>関西</figcaption>
+                    <img src="images/kansai/koyaryujinskyline.jpg" alt="関西のおすすめの道">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="/motorcycle/chugoku_shikoku">
+                    <figcaption><i class="fas fa-motorcycle" fa-fw></i>中国・四国</figcaption>
+                    <img src="images/chugoku_shikoku/shikoku_karst.jpg" alt="中国・四国のおすすめの道">
+                    </a>
+                </figure>
+                </div>
+                <div class="contents-box">
+                <figure>
+                    <a href="/motorcycle/kyusyu_okinawa">
+                    <figcaption><i class="fas fa-motorcycle" fa-fw></i>九州・沖縄</figcaption>
+                    <img src="images/kyusyu_okinawa/yamanamihiway.jpg" alt="九州・沖縄のおすすめの道">
+                    </a>
+                </figure>
+                </div>
+            <h3>プロフィール</h3>
+            <ul class="profile">
+                <li>・2015年 KAWASAKI エリミネーター250V納車</li>
+                <li>・2016年 宿泊費を節約する為にキャンプに目覚める</li>
+                <li>・2017年 ライダーの聖地：北海道に上陸</li>
+                <li>・2018年 バイクで47都道府県を走破</li>
+                <li>・2019年 Triumph ボンネビルT100納車</li>
+                <li>・2020年 キャンプにドハマりする</li>
+            </ul>
+        </div>
+<!-- //個別ページエリア -->
+        <p class="copyright">© Copyright 2021 danchan-rider All rights reserved.</p>
+    </main>
 </body>
-
 </html>
